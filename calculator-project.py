@@ -20,7 +20,7 @@ while True:
 
     # Exit
     if choice == "10":
-        print("\nThank you for using Calculator 😊")
+        print("\nThank you for using Calculator ")
         break
 
     # Square Root
