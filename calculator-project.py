@@ -1,6 +1,6 @@
 import math
 
-print("========== ADVANCED CALCULATOR ==========")
+print(" ADVANCED CALCULATOR ")
 
 while True:
 
