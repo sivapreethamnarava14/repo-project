@@ -1,6 +1,6 @@
 import math
 
-print(" ADVANCED CALCULATOR ")
+print("========== ADVANCED CALCULATOR ==========")
 
 while True:
 
@@ -12,13 +12,15 @@ while True:
     print("5. Power")
     print("6. Modulus")
     print("7. Square Root")
-    print("8. Exit")
+    print("8. Percentage")
+    print("9. Floor Division")
+    print("10. Exit")
 
-    choice = input("\nEnter your choice (1-8): ")
+    choice = input("\nEnter your choice (1-10): ")
 
     # Exit
-    if choice == "8":
-        print("\nThank you for using Calculator")
+    if choice == "10":
+        print("\nThank you for using Calculator 😊")
         break
 
     # Square Root
@@ -31,6 +33,31 @@ while True:
 
         else:
             print("Square Root =", math.sqrt(num))
+
+    # Percentage
+    elif choice == "8":
+
+        obtained = float(input("Enter Obtained Marks: "))
+        total = float(input("Enter Total Marks: "))
+
+        if total == 0:
+            print("Total marks cannot be zero")
+
+        else:
+            percentage = (obtained / total) * 100
+            print("Percentage =", percentage, "%")
+
+    # Floor Division
+    elif choice == "9":
+
+        a = float(input("Enter First Number: "))
+        b = float(input("Enter Second Number: "))
+
+        if b == 0:
+            print("Cannot divide by zero")
+
+        else:
+            print("Floor Division =", a // b)
 
     # Other Operations
     elif choice in ["1", "2", "3", "4", "5", "6"]:
@@ -69,4 +96,4 @@ while True:
 
     # Invalid Choice
     else:
-        print("Invalid Choice! Please select between 1 to 8.")
+        print("Invalid Choice! Please select between 1 to 10.")
